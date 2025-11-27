@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>데이터 사이언티스트 포트폴리오</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">DS Portfolio</a>
+      <button class="nav-toggle" aria-label="메뉴 열기">☰</button>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#notebooks">Notebooks</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>데이터로 인사이트를 만듭니다</h1>
+        <p>데이터 사이언티스트 — 머신러닝, 시각화, 재현 가능한 연구.</p>
+        <p class="cta"><a href="#projects" class="btn">프로젝트 보기</a></p>
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About</h2>
+      <p>안녕하세요 — 저는 데이터 분석과 머신러닝으로 문제를 해결하는 데이터 사이언티스트입니다. 통계적 사고와 깔끔한 코드, 재현 가능한 노트북을 중시합니다.</p>
+      <ul class="skills">
+        <li>Python, pandas, NumPy</li>
+        <li>scikit-learn, XGBoost, LightGBM</li>
+        <li>TensorFlow / PyTorch (기초)</li>
+        <li>데이터 시각화 (matplotlib, seaborn, plotly)</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>고객 이탈 예측</h3>
+          <p>모델: LightGBM — 특징공학, 교차검증, 모델 해석(Shap)</p>
+          <p><a href="#">GitHub</a> · <a href="#">노트북</a></p>
+        </article>
+        <article class="card">
+          <h3>시계열 수요 예측</h3>
+          <p>모델: Prophet / LSTM — 데이터 정제와 외생변수 처리</p>
+          <p><a href="#">GitHub</a> · <a href="#">노트북</a></p>
+        </article>
+        <article class="card">
+          <h3>대화형 대시보드</h3>
+          <p>도구: Streamlit / Plotly — 실시간 필터와 KPI 모니터링</p>
+          <p><a href="#">데모</a> · <a href="#">코드</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="notebooks" class="container section">
+      <h2>Notebooks & Data</h2>
+      <p>재현 가능한 분석을 위해 Jupyter 노트북과 샘플 데이터셋을 제공합니다.</p>
+      <ul>
+        <li><a href="#">Notebook: 고객 세분화 분석.ipynb</a></li>
+        <li><a href="#">Dataset: 거래 로그 (샘플)</a></li>
+      </ul>
+    </section>
+
+    <section id="blog" class="container section">
+      <h2>Blog</h2>
+      <article>
+        <h3>모델 해석: SHAP 이해하기</h3>
+        <p>간단한 예제와 시각화로 SHAP 값을 해석합니다. <a href="#">더 보기</a></p>
+      </article>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <p>이메일: <a href="mailto:you@example.com">you@example.com</a></p>
+      <p>GitHub: <a href="#">github.com/yourname</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 데이터 사이언티스트 포트폴리오</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn && btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>
